@@ -1,0 +1,22 @@
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: var(--padding);
+}
+
+.heroImage {
+    width: 400px;
+    margin-top: 200px;
+}
+
+.heroP {
+    line-height: 26px;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 50px;
+    text-align: center;
+    margin: auto;
+}

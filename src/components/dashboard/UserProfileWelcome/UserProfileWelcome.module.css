@@ -1,0 +1,12 @@
+.userProfileProfile {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    background: var(--grayblue);
+    border-radius: var(--borderRadius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}

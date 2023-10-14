@@ -1,0 +1,136 @@
+header {
+    width: 100%;
+    background: var(--tan);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border: 1px solid rgba(49, 46, 46, 0.02);
+    position: fixed;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.nav {
+    width: 100%;
+    max-width: var(--maxWidth);
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding);
+}
+
+.logo {
+    height: 60px;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+
+.navLinks li span{
+    text-decoration: none;
+    font-size: var(--links);
+    color: var(--teal);
+}
+
+.navLinks li span:hover{
+    color: var(--red);
+    transition: .3s ease-in-out;
+}
+
+.icon-three {
+    display: none;
+}
+
+/* ****************************************************************
+/* ****************************************************************
+Media Queries
+*****************************************************************
+*****************************************************************/
+@media screen and (max-width:768px) {
+
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        padding: 20px;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        background: var(--tan);
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.6px);
+        -webkit-backdrop-filter: blur(7.6px);
+        border: 1px solid rgba(49, 46, 46, 0.02);
+        z-index: 1;
+    }
+
+    .expanded {
+        display: flex;
+    }
+
+    .hamburger {
+        top: 20px;
+        right: 0px;
+        width: 40px;
+        height: 4px;
+        background: var(--grayblue);
+        position: absolute;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        transition: 0.5s;
+    }
+
+    .hamburger:before { 
+        top: -16px;
+    }
+    
+    .hamburger:after {
+        top: 16px;
+    } 
+
+    .icon-three {
+        position: absolute;
+        display: block;
+        top: 15px;
+        right: 15px;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+    }
+
+    .hamburger-three:before,
+    .hamburger-three:after {
+        content: '';
+        position:absolute;
+        width: 40px;
+        height: 4px;
+        background: var(--grayblue);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition:0.5s;
+    }
+
+    .icon-three.active-three .hamburger-three {
+        background:rgba(0,0,0,0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    } 
+
+    .icon-three.active-three .hamburger-three:before {
+        top: 0;
+        transform:rotate(135deg);
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .icon-three.active-three .hamburger-three:after {
+        top: 0;
+        transform:rotate(225deg);
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+}

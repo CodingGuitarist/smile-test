@@ -1,0 +1,38 @@
+.privacySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.privacySectionHeading {
+    text-align: center;
+    padding: 120px 20px 10px 0px;
+}
+
+.privacySectionUpdate {
+    padding: 0 20px 30px 20px;
+    max-width: var(--maxWidth);
+}
+
+.privacySectiontextContainer {
+    width: 100%;
+    max-width: var(--maxWidth);
+    padding: 50px 20px;
+    background: var(--grayblue);
+    border-radius: 8px;
+    margin: 0 20px 100px 20px;
+}
+
+.privacySectiontextSpan {
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.privacySectiontextContainer > p {
+    font-size: 2rem;
+    padding: 5px 20px;
+    line-height: 2.4rem;
+}

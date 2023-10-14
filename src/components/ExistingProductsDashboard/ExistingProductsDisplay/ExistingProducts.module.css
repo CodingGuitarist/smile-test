@@ -1,0 +1,94 @@
+.existingProductsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px 25px 50px 25px;
+    width: 100%;
+}
+
+.existingProductsHeading {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.existingProductsTable {
+    width: 100%;
+    /* margin: 20px; */
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+}
+
+.existingProductsTableHeader {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.existingProductsTableBody {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.existingProductsTableRowHeader {
+    background: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.existingProductsTableRowHeader th{
+    width: fit-content;
+    padding: 12px 15px;
+    font-size: 1.6rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 10px solid var(--tan);
+}
+
+.existingProductsTableRowCard {
+    background: var(--red);
+}
+
+.existingProductsTableRowCard td{
+    width: fit-content;
+    padding: 12px 15px;
+    background: white;
+    font-size: 1.6rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 10px solid var(--red);
+}
+
+.existingProductsTableRowCard td:nth-child(7), td:nth-child(8), td:nth-child(9) {
+    cursor: pointer;
+}
+
+.existingProductsTableRowCard td:nth-child(7) {
+    background: var(--tan);
+}
+
+.existingProductsTableRowCard td:nth-child(8) {
+    background: var(--rustmist);
+}
+
+.existingProductsTableRowCard td:nth-child(9) {
+    background: var(--teal);
+}
+
+.existingProductsEditBtn, .existingProductsCartBtn, .existingProductsDeleteBtn {
+    font-size: 2.2rem;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.existingProductsEditBtn:hover {
+    color: var(--teal);
+}
+
+.existingProductsDeleteBtn:hover {
+    color: var(--tan);
+}
+
+.existingProductsCartBtn:hover {
+    color: var(--red);
+}

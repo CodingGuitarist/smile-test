@@ -1,0 +1,86 @@
+.smallScreensPopupSection {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(5px) saturate(88%);
+    -webkit-backdrop-filter: blur(5px) saturate(88%);
+    background-color: rgba(17, 25, 40, 0.38);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    z-index: 100;
+}
+
+.smallScreensPopup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: var(--teal);
+    width: 100%;
+    max-width: 300px;
+    height: fit-content;
+    border-radius: var(--borderRadius);
+    top: 200px;  
+    padding-bottom: 50px;
+}
+
+.smallScreensPopupImage {
+    width: 100px;
+    padding: 30px 0;
+}
+
+.smallScreensPopupHeadingContainerr {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.smallScreensPopupHeading {
+    font-size: 2.2rem;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add this media query to target screens with a width of 480px or less */
+@media (max-width: 480px) {
+    .smallScreensPopupSection {
+      /* Adjust styles for smaller screens here */
+      top: 0;
+      height: 100%;
+      border-radius: 0;
+    }
+  
+    .smallScreensPopup {
+      /* Adjust styles for smaller screens here */
+      width: 100%;
+      top: 0;
+      padding-bottom: 20px; /* Adjust as needed */
+    }
+  
+    .smallScreensPopupImage {
+      /* Adjust styles for smaller screens here */
+      width: 80px; /* Adjust as needed */
+      padding: 20px 0;
+    }
+  
+    .smallScreensPopupHeadingContainer {
+      /* Adjust styles for smaller screens here */
+      padding: 5px;
+    }
+  
+    .smallScreensPopupHeading {
+      /* Adjust styles for smaller screens here */
+      font-size: 1.5rem; /* Adjust as needed */
+      padding: 5px;
+      text-align: center;
+    }
+  }
+  
+

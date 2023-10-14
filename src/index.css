@@ -1,0 +1,49 @@
+:root {
+    --red: #BB6464;
+    --rustmist: #ea8888;
+    --tan: #CDB699;
+    --grayblue: #C3DBD9;
+    --teal: #C8F2EF;
+    --black: #070707;
+    --maxWidth: 1200px;
+    --links: 2.2rem;
+    --padding: 1.8rem;
+    --borderRadius: 40px;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  body {
+    background: var(--red);
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2.2rem;
+  }
+
+  span {
+    font-size: 1.4rem;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

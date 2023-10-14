@@ -1,0 +1,98 @@
+.addProductFormSection {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(5px) saturate(88%);
+    -webkit-backdrop-filter: blur(5px) saturate(88%);
+    background-color: rgba(17, 25, 40, 0.38);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.addProductFormIconContainer {
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addProductFormIcon {
+    font-size: 3.4rem;
+    color: var(--grayblue);
+    cursor: pointer;
+}
+
+.addProductFormIcon:hover {
+    color: var(--red);
+}
+
+.addProductForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: var(--teal);
+    width: 400px;
+    height: fit-content;
+    border-radius: var(--borderRadius);
+    top: 200px;  
+    padding-bottom: 50px;
+}
+
+.addProductFormImage {
+    width: 100px;
+    padding: 30px 0;
+}
+
+.addProductFormInputs {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addProductInput {
+    width: 350px;
+    padding: 10px 16px;
+    outline: none;
+    border: none;
+    border-radius: var(--borderRadius);
+}
+
+.frequecyToggleContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.frequencyToggleOn {
+    font-size: 2.8rem;
+    color: var(--tan);
+}
+
+.frequencyToggleOff {
+    font-size: 2.8rem;
+    color: var(--red);
+}
+
+.addProductSubmit {
+    width: 200px;
+    padding: 10px 16px;
+    outline: none;
+    border: none;
+    border-radius: var(--borderRadius);
+    background: var(--grayblue);
+    color: var(--red);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.addProductSubmit:hover {
+    background: var(--red);
+    color: var(--grayblue);
+}

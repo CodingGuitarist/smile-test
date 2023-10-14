@@ -1,0 +1,104 @@
+.orderFormSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px 25px 50px 25px;
+    width: 100%;
+}
+
+.orderFormHeading {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.orderFormTable {
+    width: 100%;
+    margin: 20px;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+}
+
+.orderFormTableHeader {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.orderFormTableBody {
+    margin-top: 400px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.orderFormTableRowHeader {
+    background: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.orderFormTableRowHeader th{
+    width: fit-content;
+    padding: 12px 15px;
+    font-size: 1.6rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 10px solid var(--tan);
+}
+
+.orderFormTableRowCard {
+    background: var(--red);
+}
+
+.orderFormTableRowCard td{
+    width: fit-content;
+    padding: 12px 15px;
+    background: white;
+    font-size: 1.6rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 10px solid var(--red);
+}
+
+.orderFormTableRowCard td:nth-child(7), td:nth-child(8) {
+    cursor: pointer;
+}
+
+.orderFormTableRowCard td:nth-child(7) {
+    background: var(--tan);
+}
+
+.orderFormTableRowCard td:nth-child(8) {
+    background: var(--rustmist);
+}
+
+.productIdButton:hover {
+    cursor: pointer;
+    background: var(--teal);
+    transition: .2s ease-in-out;
+}
+
+.orderFormEditBtn, .orderFormDeleteBtn {
+    font-size: 2.2rem;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.orderFormEditBtn:hover {
+    color: var(--teal);
+}
+
+.orderFormDeleteBtn:hover {
+    color: var(--tan);
+}
+
+.orderFormTotal h3{
+    width: fit-content;
+    padding: 15px 18px;
+    background: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border: 10px solid var(--red);
+}
